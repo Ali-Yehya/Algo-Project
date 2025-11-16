@@ -2,6 +2,7 @@
   "name": "closest-pair-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ali-yehya.github.io/Algo-Project",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
