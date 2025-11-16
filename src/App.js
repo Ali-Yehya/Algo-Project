@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Play, Pause, RotateCcw, Upload, Info, Home, ArrowRight } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
+import { Play, Pause, RotateCcw, Upload, Home, ArrowRight } from 'lucide-react';
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState('home');
@@ -401,7 +401,6 @@ const ClosestPairDemo = ({ setCurrentPage }) => {
   const [isPaused, setIsPaused] = useState(false);
   const [step, setStep] = useState(0);
   const [result, setResult] = useState(null);
-  const [algorithm, setAlgorithm] = useState('divideconquer');
   const [steps, setSteps] = useState([]);
   const [currentPhase, setCurrentPhase] = useState('');
   const fileInputRef = useRef(null);
@@ -413,10 +412,6 @@ const ClosestPairDemo = ({ setCurrentPage }) => {
   const MAX_X = 10;
   const MIN_Y = -7.5;
   const MAX_Y = 7.5;
-
-  useEffect(() => {
-    generateRandomPoints(10);
-  }, []);
 
   const unitToPixel = (unit, isY = false) => {
     if (points.length === 0) return isY ? CANVAS_HEIGHT / 2 : CANVAS_WIDTH / 2;
